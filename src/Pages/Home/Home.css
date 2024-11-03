@@ -1,0 +1,198 @@
+.Home{
+    min-height: 120vh;
+}
+.HomeFirstSection{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.HomeFirstSection .LeftSideImage{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.HomeFirstSection .RightSideText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+.HomeFirstSection .RightSideText span{
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+.Separator{
+    width: 2px;
+    height: 100%;
+    min-width: 1px !important;
+    max-width: 1px !important;
+    background-color: var(--secondary-color);
+}
+.HomeCounters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f6f7;
+    padding: 30px;
+}
+
+.CounterCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.progress-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CounterCard svg,
+.MenuButton svg {
+    transform: rotate(-90deg); /* Rotate to start the progress from the top */
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 8;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: var(--secondary-color);
+    
+    stroke-width: 8;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.counter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.CounterNumber {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.CounterTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-top: 4px;
+}
+.FeaturesSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.FeatureCard{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+}
+.SectionTitle{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+.FeatureCardLeftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+.FeatureCardLeftSide h3 {
+    color: var(--secondary-color);      
+
+}
+.FeatureCardLeftSide span{
+    color: var(--primary-color);
+
+}
+.WhatSection{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.WhatSectionLeftText{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: start;
+    text-align: start;
+    padding: 20px;
+}
+.WhatSectionLeftText h3{
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px;
+
+}
+.WhatSectionLeftText span{
+    color: var(--primary-color);
+    padding: 10px;
+}
+.ReadMoreBtn{
+    background: linear-gradient(180deg, #124985 0%, #0D172A 100%);
+    border-radius: 30px !important;
+    padding-right:10px !important;
+    padding-left: 10px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    border: none !important;
+    outline: none !important;
+}
+.VendorsSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.VendorTitle h3{
+    font-weight: 800 !important;
+    /* font-size: 20px; */
+    
+}
+.BecomeSection{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.BecomeVendorImage{
+    margin-top: 10px;
+}
+.BecomeVendorText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.BecomeVendorText h3{
+    color: var(--secondary-color);
+    font-size: 33px;
+    font-weight: 700;
+}
+.BecomeVendorText .ReadMoreBtn{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

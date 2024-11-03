@@ -1,0 +1,28 @@
+@media (max-width:990px) {
+    .LinksNav{
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    footer {
+        padding: 20px !important;
+    }
+}
+@media (max-width:768px) {
+    .LinksNav{
+        display: none !important;
+    }
+}
+
+@media (max-width:768px) {
+    .HomeFirstSection .RightSideText{
+        align-items: center !important;
+        text-align: center;
+    }
+    .HomeFirstSection .LeftSideImage img{
+        max-width: 250px;
+    }
+    .HomeFirstSection .RightSideText img{
+        max-width: 250px;
+    }
+}
+
