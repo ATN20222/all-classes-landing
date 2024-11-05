@@ -8,6 +8,9 @@ import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Components/Footer/Footer';
+import Contact from './Pages/Contact/Contact';
+import About from './Pages/About/About';
+import HowItWorks from './Pages/HowItWorks/HowItWorks';
 function App() {
   useEffect(()=>{
     AOS.init({
@@ -20,8 +23,11 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/Home' element={<Home />} />
           <Route path='/' element={<Home />} />
+          <Route path='/Contactus' element={<Contact />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/howitworks' element={<HowItWorks />} />
         </Routes>
         <Footer/>
       </div>

@@ -1,0 +1,53 @@
+.SocialContactLinks{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.SocialContactLinks a{
+    margin: 5px;
+    margin-top: 10px;
+}
+.SocialContactLinks a svg{
+    width: 30px;
+    height: 30px;
+    color: var(--secondary-color);
+
+}
+.ContactFormSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ContactMessage{
+    min-height: 180px !important;
+}
+.ContactBtnContainer{
+    align-items: end;
+}
+.FormCol{
+    text-align: start;
+}
+.ContactBtnContainer{
+    justify-content: end;
+    text-align: end;
+}
+.ServicesCardsTitle h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.HomeFirstSectionTextCol{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: start;
+}
+.HomeFirstSectionTextCol h1{
+    color: var(--secondary-color);
+}
+.HomeFirstSectionTextCol span{
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}

@@ -3,12 +3,15 @@
 }
 :root{
   --primary-color: #0C101F;
-  --secondary-color: #  ;
+  --secondary-color: #124985  ;
   --input-border-color:#20305A;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+section{
+  overflow: hidden;
 }
 .Center{
   display: flex;

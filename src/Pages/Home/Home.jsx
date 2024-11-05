@@ -10,8 +10,8 @@ const Home  = ()=>{
     return(
         <div className="Home">
             <HomeFirstSection/>        
-            <hr className="container mt-5"/> 
-            <FeaturesSection/>
+            <hr className="container mt-5" id="features"/> 
+            <FeaturesSection/>  
             <HomeCounters/>   
             <WhatSection/>
             <VendorsSection/>

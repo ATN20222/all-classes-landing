@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faLocationDot, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../Assets/Images/AllClassesLogo.svg';
 import { Link, NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Nav = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -78,18 +79,27 @@ const Nav = () => {
                                     </NavLink>
                                 </li>
                                 <li className="list-inline-item">
-                                    <NavLink
+                                    {/* <NavLink
                                         className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
                                         to="/about"
                                         onClick={scrollToTop} 
                                     >
                                         Features
-                                    </NavLink>
+                                    </NavLink> */}
+                                    <NavHashLink
+                                        smooth
+                                        // className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                                        className="Nav-Link"
+                                        to="/home#features"
+                                        // onClick={scrollToTop} 
+                                    >
+                                        Features
+                                    </NavHashLink>
                                 </li>
                                 <li className="list-inline-item">
                                     <NavLink
                                         className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
-                                        to="/services"
+                                        to="/howitworks"
                                         onClick={scrollToTop} 
                                     >
                                         How it Works
@@ -107,7 +117,7 @@ const Nav = () => {
                                 <li className="list-inline-item">
                                     <NavLink
                                         className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
-                                        to="/news"
+                                        to="/about"
                                         onClick={scrollToTop} 
                                     >
                                         About
@@ -136,28 +146,36 @@ const Nav = () => {
                 </button>
                 <ul className="OverlayLinks">
                     <li>
-                        <NavLink to="/home" onClick={() => { scrollToTop(); toggleMenu(); }}>Home</NavLink>
+                        <NavLink to="/home" 
+                            className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                        
+                        onClick={() => { scrollToTop(); toggleMenu(); }}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" onClick={() => { scrollToTop(); toggleMenu(); }}>About Us</NavLink>
+                        <NavLink to="/about"
+                            className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                        
+                        onClick={() => { scrollToTop(); toggleMenu(); }}>About Us</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/services" onClick={() => { scrollToTop(); toggleMenu(); }}>Services</NavLink>
+                        <NavHashLink
+                            smooth
+                            // className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                            to="/home#features"
+                            // onClick={scrollToTop} 
+                        >
+                            Features
+                        </NavHashLink>
+                        {/* <NavLink to="/f" onClick={() => { scrollToTop(); toggleMenu(); }}>Services</NavLink> */}
                     </li>
                     <li>
-                        <NavLink to="/solutions" onClick={() => { scrollToTop(); toggleMenu(); }}>Solutions</NavLink>
+                        <NavLink to="/howitworks" onClick={() => { scrollToTop(); toggleMenu(); }}>How It Works</NavLink>
                     </li>
+                    
                     <li>
-                        <NavLink to="/news" onClick={() => { scrollToTop(); toggleMenu(); }}>News</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/clients" onClick={() => { scrollToTop(); toggleMenu(); }}>Clients</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/careers" onClick={() => { scrollToTop(); toggleMenu(); }}>Careers</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contactus" onClick={() => { scrollToTop(); toggleMenu(); }}>Contact Us</NavLink>
+                        <NavLink 
+                            className={({ isActive }) => isActive ? "Nav-Link ActiveLink" : "Nav-Link"}
+                        to="/contactus" onClick={() => { scrollToTop(); toggleMenu(); }}>Contact Us</NavLink>
                     </li>
                 </ul>
             </div>

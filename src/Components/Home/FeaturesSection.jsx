@@ -42,7 +42,7 @@ const FeaturesSection = ()=>{
     ];
     
     return(
-        <section className="AllSection FeaturesSection" id="features">
+        <section className="AllSection FeaturesSection">
             
             <div className="container">
                 <div className="row">

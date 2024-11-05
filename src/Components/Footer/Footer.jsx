@@ -50,7 +50,7 @@ const Footer = ()=>{
                             <div className="col-lg-3 FooterCol ">
                                 {/* <span className="FooterEventsTitle">Download App</span> */}
                                 <div className="GetOnGoogle">
-                                    <img src={GooglePlay} width="230px" alt="" />
+                                    <img src={GooglePlay} width="200px" alt="" />
                                 </div>
                                 <div className="GetOnGoogle">
                                     <img src={Apple} width="200px" alt="" />

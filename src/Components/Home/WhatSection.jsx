@@ -1,5 +1,5 @@
 import React from "react";
-import Image from '../../Assets/Images/Logo.svg'
+import Image from '../../Assets/Images/What.svg'
 import { Link } from "react-router-dom";
 const WhatSection = ()=>{
     return(
