@@ -12,8 +12,7 @@ const HowItWorksFirstSection = ()=>{
                             {/* {t('easy_life')} */}
                         </h1>
                         <span>
-                        Our app helps you communicate with people like you, share activities ,get offers and jobs 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo odit aut voluptatum? Vitae similique, est molestias nemo ipsa ipsum quia nesciunt obcaecati excepturi eveniet quo, totam laudantium, voluptates quisquam.   
+                        Want to get the most out of the app? Check out the tutorials below! they’ll guide you step-by-step and help you understand all the features we offer.
                         </span>
                         
                         {/* <div className="GoldBtnContainer">

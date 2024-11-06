@@ -12,8 +12,8 @@ const AboutFirstSection = ()=>{
                             {/* {t('easy_life')} */}
                         </h1>
                         <span>
-                        Our app helps you communicate with people like you, share activities ,get offers and jobs 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo odit aut voluptatum? Vitae similique, est molestias nemo ipsa ipsum quia nesciunt obcaecati excepturi eveniet quo, totam laudantium, voluptates quisquam.   
+                        Community apps that offer buying, selling, job opportunities, and event sharing help connect people and foster collaboration. They enable peer-to-peer transactions, local job postings, and promote events, keeping everyone informed. These features strengthen community bonds, enhance communication, and support personal and professional growth within the community.
+                        
                         </span>
                         
                         {/* <div className="GoldBtnContainer">

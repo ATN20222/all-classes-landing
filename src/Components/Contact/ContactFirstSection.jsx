@@ -15,9 +15,7 @@ const ContactFirstSection = ()=>{
                             {/* {t('easy_life')} */}
                         </h1>
                         <span>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dignissimos recusandae itaque possimus iusto, suscipit tenetur temporibus perferendis beatae, molestiae laborum dolores, nemo eum voluptatibus commodi maiores delectus numquam? Doloremque.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam vel reprehenderit tempora ipsa deserunt sequi fuga consequuntur est ipsam repellendus numquam similique illo saepe, sapiente totam veritatis quam cupiditate iure!
-                        </span>
+                        Have questions, feedback, or just want to chat? we're always here for you! Stay updated, join the conversation, and connect with us on social media.                        </span>
                         <div className="SocialContactLinks" data-aos="fade-up">
                             <Link to='#' target="blank"><FontAwesomeIcon icon={faFacebook}/></Link>
                             <Link to='#' target="blank"><FontAwesomeIcon icon={faWhatsapp}/></Link>

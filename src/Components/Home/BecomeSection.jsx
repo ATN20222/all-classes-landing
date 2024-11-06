@@ -19,7 +19,9 @@ const BecomeSection = ()=>{
                                     </div>
                                     <div className="BecomeVendorText">
                                         <h3>Become a Vendor</h3>
-                                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum commodi placeat impedit. Quam quaerat quidem doloremque alias accusantium, aspernatur temporibus. Minima consectetur expedita, ullam sequi unde iusto magni? Sint, dolor!</span>
+                                        <span>
+                                        Unlock new opportunities by becoming a vendor on our platform. Whether you’re a small business or a larger brand, our app gives you direct access to a growing community of users eager to buy, sell, and connect. Gain visibility, offer exclusive deals, and expand your reach by tapping into a vibrant, engaged marketplace.
+                                        </span>
                                         <div className="ReadMoreBtn mt-2">
                                             <a className="btn btn-danger ReadMoreBtn" href="mailto:info@mindholding.net">
                                                 Join now
@@ -36,7 +38,10 @@ const BecomeSection = ()=>{
                                     </div>
                                     <div className="BecomeVendorText">
                                         <h3>Become a Community</h3>
-                                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum commodi placeat impedit. Quam quaerat quidem doloremque alias accusantium, aspernatur temporibus. Minima consectetur expedita, ullam sequi unde iusto magni? Sint, dolor!</span>
+                                        <span>
+                                        Join our platform as a community and bring your members together in a space that fosters connection, collaboration, and growth. Whether you're a group, organization, or local network, We helps you share updates, promote events, offer exclusive deals, and connect with others inside your community.
+                                        </span>
+                                            
                                         <div className="ReadMoreBtn mt-2">
                                             <a className="btn btn-danger ReadMoreBtn" href="mailto:info@mindholding.net">
                                                 Join now
