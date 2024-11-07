@@ -12,8 +12,7 @@ const AboutFirstSection = ()=>{
                             {/* {t('easy_life')} */}
                         </h1>
                         <span>
-                        Community apps that offer buying, selling, job opportunities, and event sharing help connect people and foster collaboration. They enable peer-to-peer transactions, local job postings, and promote events, keeping everyone informed. These features strengthen community bonds, enhance communication, and support personal and professional growth within the community.
-                        
+                        this app makes connecting with your community easy and fun, whether you're in a club, alumni group, or local organization, it brings everything together—events, job opportunities, buy-and-sell, and more—all in one place with real-time updates to keep you engaged.                        
                         </span>
                         
                         {/* <div className="GoldBtnContainer">

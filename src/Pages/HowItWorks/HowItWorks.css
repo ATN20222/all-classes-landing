@@ -51,3 +51,28 @@
     padding: 15px;
     cursor: pointer;
 }
+.FAQItem{
+    margin-bottom: 20px;
+}
+.FAQItemHeader{
+    background-color: #f5f6f7;
+    display: flex;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    
+
+}
+.FAQItemHeader svg{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.FAQDescribtion{
+    padding: 20px;
+    padding-top: 10px;
+    text-align: start;
+}

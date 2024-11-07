@@ -11,7 +11,7 @@ const About = ()=>{
             <hr className="container mb-5"/> 
             <MissionSection/>
             <FeaturesSection/>
-            <GetTheAppSection/>
+            {/* <GetTheAppSection/> */}
         </section>
     );
 }

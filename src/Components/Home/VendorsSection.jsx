@@ -1,6 +1,6 @@
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import vendorImage from '../../Assets/Images/Circle-K-Emblem.png'
 const VendorsSection = ()=>{
     const vendors = [
@@ -44,9 +44,35 @@ const VendorsSection = ()=>{
             name:'CircleK',
             image:vendorImage,
         }
-    ]
+    ];
+    const [data,setData] = useState([]);
+    useEffect(()=>{
+        fetch('https://yellowgreen-raccoon-480548.hostingersite.com/api/all/brands',{
+            method: 'GET', 
+            headers: {
+              'Accept': 'application/json',          
+              'Content-Type': 'application/json',     
+              'Database-App': 'mind'                  
+            }
+          })
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+            return response.json(); 
+        })
+        .then(data => {
+            console.log(data); 
+            setData(data.content)
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+
+    },[]);
     return(
-        <section className="AllSection VendorsSection"  data-aos='fade-up'>
+        data.length>0?
+            (<section className="AllSection VendorsSection"  data-aos='fade-up'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -55,7 +81,7 @@ const VendorsSection = ()=>{
                     <div className="col-lg-12">
                         <div className="container">
                             <div className="row Center">
-                                {vendors.map((vendor)=>(
+                                {data.map((vendor)=>(
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-8 p-3" key={vendor.id}>
                                         <div className="VendorCard card p-4">
                                             <div className="VendorImage Center">
@@ -73,7 +99,10 @@ const VendorsSection = ()=>{
                     </div>
                 </div>
             </div>
-        </section>
+        </section>)
+        :
+        <></>
+        
     );
 }
 export default VendorsSection;

@@ -12,8 +12,7 @@ const HowItWorksFirstSection = ()=>{
                             {/* {t('easy_life')} */}
                         </h1>
                         <span>
-                        Want to get the most out of the app? Check out the tutorials below! they’ll guide you step-by-step and help you understand all the features we offer.
-                        </span>
+                        Want to get the most out of the app? Check out the tutorials below! they’ll guide you step-by-step and help you understand all the features the app offers.                        </span>
                         
                         {/* <div className="GoldBtnContainer">
                             <NavLink className="btn btn-danger GoldBtn" to="/Login">
